@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- DEF -->
+  <link rel="shortcut icon" href="a-img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+
+  <!-- Vendor -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Автопартнер | Мережа Магазинів Автозапчастин</title>
+</head>
+
+<body>
+  <nav class="text-light fixed-bottom bg-nav" id="main-nav">
+    <div class="container">
+      <div class="row py-3">
+        <div id="navbarJS" class="d-flex flex-row mx-auto">
+          <div class="nav-item logo d-none d-md-block">
+            <a href="#">
+              <img src="a-img/logo.png" width="90" height="60" alt="" id="main-selector" data-toggle="collapse"
+                data-target="#tForm">
+            </a>
+          </div>
+          <div class="nav-item menu" data-toggle="collapse" data-target="#ap">
+            <i id="ap-selector" class="fas fa-car fa-2x d-block"> </i>
+          </div>
+          <div class="nav-item menu" data-toggle="collapse" data-target="#tShop">
+            <i id="shop-selector" class="fas fa-shopping-cart fa-2x d-block"> </i>
+          </div>
+          <div class="nav-item menu" data-toggle="collapse" data-target="#tMap">
+            <i id="map-selector" class="fas fa-envelope fa-2x d-block"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section id="main-section">
+    <!-- tForm -->
+    <div id="tForm" class="collapse collapse show">
+      <div class="container-fluid" id="">
+        <div class="container">
+          <div id="form-row" class="row push-down">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AP -->
+    <div id="ap" class="collapse collapse">
+      <section id="about">
+        <div class="container-fluid bg-nav">
+          <div class="container pt-3">
+            <div id="ap-about" class="row mx-auto py-5">
+            </div>
+
+          </div>
+        </div>
+        <!-- --render bullets -->
+        <div class="container-fluid wrap2">
+          <div class="container pb-5">
+            <div id="bullets" class="row mx-auto py-4">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Shop -->
+    <div id="tShop" class="collapse collapse">
+      <div class="container-fluid py-5 wrap1">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="text-btn text-left"> Інтернет Магазин </h1>
+                <hr>
+            </div>
+          </div>
+          <div id="ap-shop">
+          </div>
+        </div>
+        <div class="row py-5">
+          <div class="col-md-10 col-lg-9 mx-auto text-center">
+            <a href="https://autopartner.herokuapp.com/" target="_blanc" class="btn btn-shop"> Створити Кабінет </a>
+          </div>
+          <div class="col-md-10 col-lg-5 text-center mx-auto mt-5">
+            <hr>
+            <p class="text-cta">
+              До кінця 2019 року діють індивідуальні бонусні знижки на усі замовлення, зроблені
+              зареєстрованими користувачами. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- tMap -->
+    <div id="tMap" class="collapse collapse">
+      <!-- Map -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12" id="map-super" style="width: 100%; height: 70vh;"></div>
+        </div>
+      </div>
+      <!-- Contacts -->
+      <div id="contacts" class="container-fluid bg-nav">
+        <div class="container pt-4 pb-5">
+          <div id="row-contacts" class="row text-light">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Vendor -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+
+  <!--Feho's -->
+  <script src="/js/core.min.js"></script>
+  <script src="/js/app.min.js"></script>
+
+  <!-- Map -->
+  <script src="js/g-map.min.js"></script>
+  <script async="" defer=""
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSeEQdJ6p1TN_DBtkaD1czR-JVhKdzevs&amp;callback=initMap"></script>
+
+
+</body>
+
+</html>

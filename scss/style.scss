@@ -1,0 +1,205 @@
+// Font
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
+
+$logo-color: #cb2027;
+$gold: #e0b83d;
+$nav: rgb(49, 46, 46);
+$shadowO: -1px -1px 15px -2px $nav;
+$shadowW: 1px 1px 1rem 1px white;
+
+body {
+  font-family: "Montserrat", "Tahoma", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;  
+}
+
+//NAV
+#navbarJS {
+  justify-items: stretch;
+  align-items: center;
+  .logo {
+    align-self: flex-start;
+    margin-right: 30vw;
+  } 
+  .nav-item {
+    text-align: center;
+    color: whitesmoke;
+    transform: scale(0.9);
+    transition: 0.5s;
+    i {
+      cursor: pointer;
+      padding: 5px 15px;
+    }  
+    &:hover{
+      transform: scale(1);
+      color: $gold;
+    }    
+  }
+}
+
+//MainScreen
+#main-section {
+  background-image: url('../a-img/main.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+//FORMSection
+.push-down {
+  padding-top: 20vh;
+  padding-bottom: 20vh;  
+}
+.form-overlay {
+  opacity: 0;
+  animation: myform 2.5s ease-in-out both; 
+  font-size: 1.3rem;
+  line-height: 1.5rem;     
+  box-shadow: 1px 1px 20px 1px #9ea19a;
+  border-radius: 2px;
+  color: #343a40;
+  background-color: #343a40cb;
+  transition: 1.5s;  
+  small {
+    color: white; 
+  }  
+  h4 {
+    color: $gold;
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 1.8rem;    
+  }
+  .form-control {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+  &:hover {
+    box-shadow: 1px 1px 5px 1px $gold;
+    background-color: #343a40ea;
+  }
+}
+
+
+//About Shop Section
+.card {
+  border: none;
+  background-color: transparent;
+}
+.orest {
+  box-shadow: $shadowW;
+}
+.img-shop {
+  border-radius: 3px;
+  box-shadow: $shadowW;
+  transform: scale(0.98);
+  transition: 0.6s;
+  margin-bottom: 2rem;
+  &:hover{
+    transform: scale(1);
+  }
+}
+
+
+
+//Contacts
+#contacts {
+  a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      color: antiquewhite;
+    }
+  }  
+  small, p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
+
+
+
+//BG & TEXT 
+.bg-0 {
+  background: transparent;
+  border: none;
+}
+.bg-nav {
+  background-color: $nav;
+}
+.wrap2, 
+.wrap1 {
+  background: rgba(220,223,216, 0.85);
+  border-top: 0.1rem $logo-color solid;
+}
+
+.text-logo {
+  color: $logo-color;
+}
+.text-gold {
+  color: $gold;
+}
+.text-cta {
+  color: $nav;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 600;  
+}
+.bullet-p {
+  color: $nav;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.6px;
+}
+.bullet-h {
+  color: $nav;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+//animated btn
+.btn-shop {
+  background-color: #343a40;
+  color: white;
+  animation: mymove 5s ease-in-out infinite;
+  animation-direction: alternate-reverse;  
+  &:hover {
+    color: white;
+    animation: none;
+    background-color: $gold;
+  }
+}
+
+
+//animation
+@keyframes myform {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes mymove {
+  0% {   
+    background-color: $nav;
+  }
+  50% {
+    background-color: $gold;    
+  }
+  100% {
+    background-color: $nav;
+  }
+}
+
+

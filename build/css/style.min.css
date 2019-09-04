@@ -1,0 +1,40 @@
+body{font-family:Montserrat,Tahoma,proxima-nova,"Helvetica Neue",Arial,sans-serif;overflow-x:hidden}
+#navbarJS{justify-items:stretch;align-items:center}
+#navbarJS .logo{align-self:flex-start;margin-right:30vw}
+#navbarJS .nav-item{text-align:center;color:#f5f5f5;transform:scale(.9);transition:.5s}
+#navbarJS .nav-item i{cursor:pointer;padding:5px 15px}
+#navbarJS .nav-item:hover{transform:scale(1);color:#e0b83d}
+#main-section{background-image:url(../a-img/main.jpg);background-repeat:no-repeat;background-position:center;background-size:cover;background-attachment:fixed}
+.push-down{padding-top:20vh;padding-bottom:20vh}
+.form-overlay{opacity:0;animation:myform 2.5s ease-in-out both;font-size:1.3rem;line-height:1.5rem;box-shadow:1px 1px 20px 1px #9ea19a;border-radius:2px;color:#343a40;background-color:#343a40cb;transition:1.5s}
+.form-overlay small{color:#fff}
+.form-overlay h4{color:#e0b83d;font-weight:500;font-size:1.7rem;line-height:1.8rem}
+.form-overlay .form-control{font-size:.8rem;line-height:1.5rem;text-align:center}
+.form-overlay:hover{box-shadow:1px 1px 5px 1px #e0b83d;background-color:#343a40ea}
+.card{border:none;background-color:transparent}
+.orest{box-shadow:1px 1px 1rem 1px #fff}
+.img-shop{border-radius:3px;box-shadow:1px 1px 1rem 1px #fff;transform:scale(.98);transition:.6s;margin-bottom:2rem}
+.img-shop:hover{transform:scale(1)}
+#contacts a{color:#fff;text-decoration:none}
+#contacts a:hover{color:#faebd7}
+#contacts p,#contacts small{margin:0;padding:0}
+.bg-0{background:0 0;border:none}
+.bg-nav{background-color:#312e2e}
+.wrap1,.wrap2{background:rgba(220,223,216,.85);border-top:.1rem #cb2027 solid}
+.text-logo{color:#cb2027}
+.text-gold{color:#e0b83d}
+.text-cta{color:#312e2e;font-size:1.2rem;line-height:1.5rem;font-weight:600}
+.bullet-p{color:#312e2e;font-weight:400;font-size:1.1rem;line-height:1.5rem;letter-spacing:.6px}
+.bullet-h{color:#312e2e;font-weight:600;font-size:1.2rem}
+.btn-shop{background-color:#343a40;color:#fff;animation:mymove 5s ease-in-out infinite;animation-direction:alternate-reverse}
+.btn-shop:hover{color:#fff;animation:none;background-color:#e0b83d}
+@keyframes myform{
+0%{opacity:0}
+50%{opacity:.4}
+100%{opacity:1}
+}
+@keyframes mymove{
+0%{background-color:#312e2e}
+50%{background-color:#e0b83d}
+100%{background-color:#312e2e}
+}
